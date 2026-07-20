@@ -19,20 +19,15 @@ const services = [
     desc: "Developing secure and efficient backend systems with RESTful APIs and database integration.",
     full: "I build backend services using Python and Flask with authentication, API development, and database handling."
   },
+
   {
     id: "04",
-    title: "App Development",
-    desc: "Creating fast and responsive applications focused on performance and usability.",
-    full: "I design and develop application logic with smooth performance and user-friendly experience across devices."
-  },
-  {
-    id: "05",
     title: "Digital Projects",
     desc: "Working on real-world projects including automation tools and AI-based solutions.",
     full: "I build practical digital solutions such as resume analyzers, automation systems, and AI-based applications."
   },
   {
-    id: "06",
+    id: "05",
     title: "Content Creation",
     desc: "Creating technical content and documentation to simplify complex topics.",
     full: "I write structured technical content and guides to explain concepts clearly and improve understanding."

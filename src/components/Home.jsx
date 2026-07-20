@@ -14,7 +14,7 @@ const Home = () => {
       </h1>
 
       <p className="mt-4 max-w-xl text-gray-300">
-        Building modern, responsive, and scalable web applications with React.js and Python.
+        Building modern, responsive, and scalable web applications with React.js, Node.js, Python and FastAPI .
       </p>
     </section>
   );

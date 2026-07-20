@@ -1,6 +1,16 @@
 import Pic from "../assets/Pic.jpeg";
 
+import { useState } from "react";
+
+
+
+
 const About = () => {
+
+
+  const [showMore, setShowMore] = useState(false);
+
+
   return (
     <section id="about" className="bg-black text-white py-20 px-10">
 
@@ -14,7 +24,7 @@ const About = () => {
 
         {/* Image */}
         <div className="flex justify-center overflow-hidden rounded-2xl">
-          <img 
+          <img
             src={Pic}
             alt="profile"
             className="w-70 h-80 group border border-white/20 rounded-xl p-0 transition duration-300   hover:border-pink-500 hover:shadow-[0_0_20px_rgba(236,72,153,0.3)] "
@@ -32,29 +42,53 @@ const About = () => {
             {[
               { name: "HTML & CSS", width: "80%" },
               { name: "Python", width: "90%" },
-              { name: "React.js", width: "85%" },
-              { name: "JavaScript", width: "75%" },
-            ].map((skill, i) => (
-              <div key={i} className="group">
+              { name: "React.js", width: "90%" },
+              { name: "JavaScript", width: "80%" },
+              { name: "Tailwind CSS", width: "90%" },
+              { name: "Node.js", width: "80%" },
+              { name: "Express.js", width: "75%" },
+              { name: "FastAPI", width: "75%" },
+              { name: "REST API", width: "80%" },
+              { name: "MongoDB", width: "80%" },
+              { name: "MySQL", width: "85%" },
+              { name: "Git & GitHub", width: "80%" },
+              { name: "GitHub", width: "80%" },
+              { name: "AI Tools (Cursor, Gemini, OpenAI)", width: "80%" }
+              
+            ]
+              .slice(0, showMore ? 14 : 4)
+              .map((skill, i) => (
+                <div key={i} className="group">
+                  <p
+                    className="mb-1 inline-block relative
+          group-hover:text-pink-400
+          transition duration-200
+          group-hover:translate-x-1"
+                  >
+                    {skill.name}
+                  </p>
 
-                <p className="mb-1 inline-block relative 
-group-hover:text-pink-400 
-transition duration-200 group-hover:scale-400
-group-hover:translate-x-1">
-                  {skill.name}</p>
-
-                <div className="w-full bg-gray-700 h-2 rounded overflow-hidden">
-                  <div
-                    className="h-2 rounded bg-gradient-to-r from-pink-500 to-orange-400 
-          transition-all duration-500 
-          group-hover:scale-x-105 
-          group-hover:shadow-[0_0_12px_rgba(236,72,153,0.8)]"
-                    style={{ width: skill.width }}
-                  ></div>
+                  <div className="w-full bg-gray-700 h-2 rounded overflow-hidden">
+                    <div
+                      className="h-2 rounded bg-gradient-to-r from-pink-500 to-orange-400
+            transition-all duration-500
+            group-hover:scale-x-105
+            group-hover:shadow-[0_0_12px_rgba(236,72,153,0.8)]"
+                      style={{ width: skill.width }}
+                    ></div>
+                  </div>
                 </div>
+              ))}
 
-              </div>
-            ))}
+            {/* Show More Button */}
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={() => setShowMore(!showMore)}
+                className="px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 to-orange-400 text-white font-medium transition duration-300 hover:scale-105"
+              >
+                {showMore ? "Show Less ↑" : "Show More ↓"}
+              </button>
+            </div>
           </div>
         </div>
       </div>
