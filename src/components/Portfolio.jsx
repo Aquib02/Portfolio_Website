@@ -3,7 +3,7 @@ const projects = [
     id: "01",
     title: "Intelligent Hiring Gateway",
     desc: "AI-based resume analysis tool using React & Python.",
-    link: "https://github.com/Aquib02",
+    link: "https://intelligent-hiring-gateway.vercel.app/",
   },
   {
     id: "02",
@@ -15,7 +15,13 @@ const projects = [
     id: "03",
     title: "Portfolio Website",
     desc: "Personal portfolio built with React and Tailwind CSS.",
-    link: "https://github.com/Aquib02/Portfolio_Website",
+    link: "https://aquib02.github.io/Portfolio_Website/",
+  },
+  {
+    id: "04",
+    title: "AI-CRM-ProjectAI-CRM-Project",
+    desc: "AI-powered CRM module for logging Healthcare Professional (HCP) interactions using React, FastAPI, LangGraph, and Groq LLM.",
+    link: "https://ai-crm-project-3ge9x8hpb-aquib2.vercel.app/",
   },
 ];
 

@@ -9,7 +9,7 @@ const Navbar = () => {
       </h1>
 
       {/* Links */}
-      <ul className="flex gap-8">
+      <ul className="hidden md:flex gap-8">
         {["Home", "About", "Services", "Portfolio", "Contact"].map((item, i) => (
           <li key={i}>
             <a
