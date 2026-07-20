@@ -32,7 +32,7 @@ const Portfolio = () => {
       <h2 className="text-4xl font-bold text-center mb-16">
         My{" "}
         <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
-          Portfolio
+          Projects
         </span>
       </h2>
 
